@@ -1,0 +1,51 @@
+.taskList__header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 30px 10px 5px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.taskList__list {    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;   
+}
+
+.taskList__item {
+    cursor: pointer;
+
+    &:hover {
+        outline: 2px solid teal;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.taskList__author,
+.taskList__account,
+.taskList__date  {
+    box-sizing: border-box;
+    flex-grow: 1;
+    max-width: 27%;
+}
+
+.taskList__status {
+    display: flex;
+    justify-content: center;
+    min-width: 19%;
+}
+
+@media (max-width: 650px) {
+    .taskList__header {
+        display: none;
+    }
+}

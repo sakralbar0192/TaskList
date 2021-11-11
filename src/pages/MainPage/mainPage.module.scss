@@ -1,0 +1,15 @@
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        margin: 0 0 20px;
+    }
+}
+
+.mainPage__taskList {
+    align-self: stretch;
+    margin: 0 0 20px;
+}
